@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulanyjylary Dolandyrmak</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <h1>Ulanyjylary Dolandyrmak</h1>
+        <button class="sort-btn">Sort</button>
+    </nav>
+    <main>
+        <a href="create.html"><button class="create-btn">+ Create</button></a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ady</th>
+                    <th>Ulanyjy Ady</th>
+                    <th>Rol</th>
+                    <th>Işjeň Statusy</th>
+                    <th>Hereketler</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ahmet</td>
+                    <td>ahmet123</td>
+                    <td>Admin</td>
+                    <td><span class="status active">Aktiw</span></td>
+                    <td>
+                        <a href="edit.html"><button class="action-btn edit"><i class="fas fa-edit"></i></button></a>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aýna</td>
+                    <td>ayna456</td>
+                    <td>Moderator</td>
+                    <td><span class="status inactive">Aktiw däl</span></td>
+                    <td>
+                        <a href="edit.html"><button class="action-btn edit"><i class="fas fa-edit"></i></button></a>
+                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button class="page-btn">&laquo; Öňki</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">Indiki &raquo;</button>
+        </div>
+        <div class="actions">
+            <button class="import-btn">Import</button>
+            <button class="export-btn">Export</button>
+        </div>
+    </main>
+</body>
+</html>
