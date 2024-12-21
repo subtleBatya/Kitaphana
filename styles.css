@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f7fc;
+    overflow: hidden;
 }
 
 nav {
@@ -27,7 +28,10 @@ button {
 }
 
 /* Buttons */
-.create-btn, .sort-btn, .import-btn, .export-btn {
+.create-btn,
+.sort-btn,
+.import-btn,
+.export-btn {
     background-color: #3498db;
     color: white;
     padding: 0.5rem 1rem;
@@ -49,7 +53,8 @@ table {
     margin-bottom: 1rem;
 }
 
-th, td {
+th,
+td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -145,7 +150,8 @@ label {
     color: #34495e;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
@@ -155,7 +161,8 @@ input, select {
     box-sizing: border-box;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #3498db;
     outline: none;
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
