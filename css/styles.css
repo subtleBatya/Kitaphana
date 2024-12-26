@@ -53,6 +53,10 @@ table {
     margin-bottom: 1rem;
 }
 
+thead {
+    background-color: #ECF0F1 !important;
+}
+
 th,
 td {
     padding: 1rem;
