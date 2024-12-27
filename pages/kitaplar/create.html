@@ -12,11 +12,11 @@
 </head>
 
 <body class=" d-flex gap-1">
-    <div class="" style="width: 20vw; height: 70vw; background-color: #2c3e50;">
+    <div class="" style="width: 20vw; height: 70vw; background: linear-gradient(to top, #2265a8, black);">
         <div class=" d-block text-white text-center mt-4">
             <div class=" fw-bold fs-4">Kitaphana</div>
             <div class="d-block mt-5 fs-5 text-center mx-auto" style="width: 90%;">
-                <div class=" p-2 mb-3" style="border: 1px solid white;">Ulanyjylar</div>
+                <div class=" pb-3 fw-medium">Ulanyjylar</div>
                 <div class="pb-3 fw-medium">Rollar</div>
                 <div class="pb-3 fw-medium">Zanrlar</div>
                 <div class="pb-3 fw-medium">Awtorlar</div>
@@ -29,7 +29,7 @@
     </div>
     <div class="main" style=" width: 79vw;">
         <nav class=" rounded-2">
-            <h1>Ulanyjy Döretmek</h1>
+            <h1>Kitap Döretmek</h1>
             <a href="index.html" style="text-decoration: none;"><button class="back-btn"
                     style="text-decoration: none;"><i class="fas fa-arrow-left"></i>
                     Yzyna dolanmak</button></a>
@@ -46,15 +46,31 @@
 
                         <label for="name-en">Ady EN:</label>
                         <input type="text" id="name-en" placeholder="Ady EN">
+                        <label for="role">Rol:</label>
+                        <select id="role">
+                            <option>Admin</option>
+                            <option>Moderator</option>
+                            <option>Ulanyjy</option>
+                        </select>
+                        <div class=" d-flex align-items-baseline ">
+                            <div class=" mt-4" style="width: 7vw; height: 7vw; border-radius: 50%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                                    class="bi bi-circle-fill text-secondary" viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="8" />
+                                </svg>
+                            </div>
+                            <div class="fw-medium">Suraty</div>
+
+
+                        </div>
                     </div>
                     <div class="col-4">
-                        <label for="password">Parol:</label>
-                        <div class="password-container">
-                            <input type="password" id="password" placeholder="Parol">
-                            <button type="button" class="toggle-password">
-                                <i class="fas fa-eye"></i>
-                            </button>
-                        </div>
+                        <label for="role">Rol:</label>
+                        <select id="role">
+                            <option>Admin</option>
+                            <option>Moderator</option>
+                            <option>Ulanyjy</option>
+                        </select>
 
                         <label for="role">Rol:</label>
                         <select id="role">
@@ -68,6 +84,15 @@
                             <option>Aktiw</option>
                             <option>Aktiw däl</option>
                         </select>
+
+                        <label for="status">Işjeň Statusy:</label>
+                        <select id="status">
+                            <option>Aktiw</option>
+                            <option>Aktiw däl</option>
+                        </select>
+
+                        <label for="status">Işjeň Statusy:</label>
+                        <input type="file">
                     </div>
                 </div>
 
