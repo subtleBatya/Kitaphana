@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulanyjy Döretmek</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -29,7 +29,7 @@
     </div>
     <div class="main" style=" width: 79vw;">
         <nav class=" rounded-2">
-            <h1>Bellikleri Döretmek</h1>
+            <h1>Wideolary Döretmek</h1>
             <a href="index.html" style="text-decoration: none;"><button class="back-btn"
                     style="text-decoration: none;"><i class="fas fa-arrow-left"></i>
                     Yzyna dolanmak</button></a>
@@ -65,21 +65,30 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <label class="text align-baseline" for="role">Nesiryat:</label>
-                        <textarea class="rounded-2 border border-gray" name="" id="" cols="35" rows="3"
-                            placeholder="Text" style="resize: none;"></textarea>
+                        <label for="role">Nesiryat:</label>
+                        <select id="role">
+                            <option>Admin</option>
+                            <option>Moderator</option>
+                            <option>Ulanyjy</option>
+                        </select>
 
-                        <label class="text align-baseline" for="role">Cykarylan yyly:</label>
-                        <textarea class="rounded-2 border border-gray" name="" id="" cols="35" rows="3"
-                            placeholder="Text" style="resize: none;"></textarea>
+                        <label for="role">Cykarylan yyly:</label>
+                        <select id="role">
+                            <option>Admin</option>
+                            <option>Moderator</option>
+                            <option>Ulanyjy</option>
+                        </select>
 
-                        <label class="text align-baseline" for="status">Kitabyn gornusi:</label>
-                        <textarea class="rounded-2 border border-gray" name="" id="" cols="35" rows="3"
-                            placeholder="Text" style="resize: none;"></textarea>
+                        <label for="status">Kitabyn gornusi:</label>
+                        <select id="status">
+                            <option>Aktiw</option>
+                            <option>Aktiw däl</option>
+                        </select>
 
 
 
-
+                        <label for="status">Fayl:</label>
+                        <input type="file">
                     </div>
                 </div>
 
