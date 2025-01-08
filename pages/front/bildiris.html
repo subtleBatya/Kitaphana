@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildiris</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .btn-custom {
+            border-radius: 20px;
+            color: #fff;
+        }
+
+        .btn-active {
+            background-color: #0039d7;
+            color: #fff;
+        }
+
+        .btn-inactive {
+            background-color: #f5f5f5;
+            color: #000;
+        }
+
+        .search-input {
+            border: 1px solid #0039d7;
+            border-radius: 20px;
+            padding: 8px 15px;
+        }
+
+        .search-btn {
+            background-color: #0039d7;
+            color: #fff;
+            border-radius: 50%;
+            padding: 8px 12px;
+            border: none;
+        }
+
+        .line-separator {
+            border-top: 2px solid #0039d7;
+            margin: 15px 0;
+        }
+
+        .post-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .post-img {
+            width: 70px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .post-date {
+            text-align: right;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Header -->
+        <h1 class="text-primary">Bildiris</h1>
+        <p>
+            Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen kitaplary
+            kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we karz alyp bolýar.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="d-flex gap-2 mb-3">
+            <button class="btn btn-active">Hemmesi</button>
+            <button class="btn btn-inactive">Umumy bildiris</button>
+            <button class="btn btn-inactive">Okuw maglumatlary</button>
+            <button class="btn btn-inactive">Bilim we makalalar</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="d-flex align-items-center gap-2">
+            <input type="text" class="form-control search-input" placeholder="Gözleg sözüňizi ýazyň">
+            <button class="search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+        <!-- Separator -->
+        <div class="line-separator"></div>
+
+        <!-- Post Cards -->
+        <div class="post-card d-flex">
+            <img src="book-cover.png" alt="Book cover" class="post-img">
+            <div class="flex-grow-1">
+                <p>Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen
+                    kitaplary kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we
+                    karz alyp bolýar.</p>
+                <i class="bi bi-person"></i>
+            </div>
+            <div class="post-date">
+                05/11/2024
+            </div>
+        </div>
+
+        <div class="post-card d-flex">
+            <img src="book-cover.png" alt="Book cover" class="post-img">
+            <div class="flex-grow-1">
+                <p>Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen
+                    kitaplary kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we
+                    karz alyp bolýar.</p>
+                <i class="bi bi-person"></i>
+            </div>
+            <div class="post-date">
+                05/11/2024
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Icons -->
+    <script src="../../scripts/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+</html>
