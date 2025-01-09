@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <style>
+        /* body {
+            margin: 0 a;
+        } */
+
         .book-card {
             text-align: center;
             background: #f8f9fa;
@@ -40,6 +44,26 @@
             font-size: 2rem;
             color: #00bfff;
         }
+
+        .footer {
+            background-color: #253977;
+            color: white;
+            padding: 20px 0;
+
+        }
+
+        .footer h5 {
+            color: white;
+        }
+
+        .footer a {
+            color: #e2e2e2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
     </style>
 </head>
 
@@ -54,16 +78,17 @@
     <div class="d-flex">
         <div class="col-3">
             <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown link
                 </a>
-              
+
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-              </div>
+            </div>
         </div>
         <div class="col-3">Maglumat gozlemek</div>
         <div class="col-3">Maglumat gozlemek</div>
@@ -209,7 +234,7 @@
                     <div class="row text-center mx-auto justify-content-around">
                         <div class="col-md-3">
                             <div class="book-card">
-                                <img src="https://via.placeholder.com/150" alt="Pride and Prejudice">
+                                <img style="width: 10vw;" src="../../images/book.webp" alt="Pride and Prejudice">
                                 <h5 class="mt-3">Pride And Prejudice</h5>
                                 <p class="rating">⭐ 4.5k</p>
                                 <button class="btn btn-primary">Download</button>
@@ -217,7 +242,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="book-card">
-                                <img src="https://via.placeholder.com/150" alt="Far From the Madding Crowd">
+                                <img style="width: 10vw;" src="../../images/book.webp" alt="Far From the Madding Crowd">
                                 <h5 class="mt-3">Far From The Madding Crowd</h5>
                                 <p class="rating">⭐ 4.5k</p>
                                 <button class="btn btn-primary">Download</button>
@@ -225,7 +250,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="book-card">
-                                <img src="https://via.placeholder.com/150" alt="Hard Luck Learn UX">
+                                <img style="width: 10vw;" src="../../images/book.webp" alt="Hard Luck Learn UX">
                                 <h5 class="mt-3">Hard Luck Learn UX</h5>
                                 <p class="rating">⭐ 4.5k</p>
                                 <button class="btn btn-primary">Download</button>
@@ -238,7 +263,7 @@
                     <div class="row text-center mx-auto justify-content-around">
                         <div class="col-md-3">
                             <div class="book-card">
-                                <img src="https://via.placeholder.com/150" alt="Book 4">
+                                <img style="width: 10vw;" src="../../images/book.webp" alt="Book 4">
                                 <h5 class="mt-3">Book Title 4</h5>
                                 <p class="rating">⭐ 4.2k</p>
                                 <button class="btn btn-primary">Download</button>
@@ -246,7 +271,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="book-card">
-                                <img src="https://via.placeholder.com/150" alt="Book 5">
+                                <img style="width: 10vw;" src="../../images/book.webp" alt="Book 5">
                                 <h5 class="mt-3">Book Title 5</h5>
                                 <p class="rating">⭐ 4.7k</p>
                                 <button class="btn btn-primary">Download</button>
@@ -254,7 +279,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="book-card">
-                                <img src="https://via.placeholder.com/150" alt="Book 6">
+                                <img style="width: 10vw;" src="../../images/book.webp" alt="Book 6">
                                 <h5 class="mt-3">Book Title 6</h5>
                                 <p class="rating">⭐ 4.8k</p>
                                 <button class="btn btn-primary">Download</button>
@@ -273,7 +298,43 @@
                 <span aria-hidden="true">&gt;</span>
             </button>
         </div>
+
+        <!-- Footer -->
+        <div class="footer mt-5" style="height: 39vh;">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4">
+                        <h1 class="my-3">HNGU Library</h1>
+                        <p class="text-wrap mt-4" style="width: 80%;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                            Donec ultrices mi
+                            in
+                            ipsum vehicula
+                            laoreet asdfsdaf dsfsd.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-3"><a href="#">Home</a></li>
+                            <li class="mb-3"><a href="#">About Us</a></li>
+                            <li class="mb-3"><a href="#">Our Service</a></li>
+                            <li class=""><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Pages</h5>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-3"><a href="#">Our Blog</a></li>
+                            <li class="mb-3"><a href="#">Our Team</a></li>
+                            <li class="mb-3"><a href="#">Testimonial</a></li>
+                            <li class=""><a href="#">CTA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 
 
 
