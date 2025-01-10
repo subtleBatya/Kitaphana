@@ -16,11 +16,15 @@
         }
 
         .background-section {
-            position: relative; /* Allows inner content positioning */
-            height: 85vh; /* Height between 60-70% of the viewport */
-            background: url('../../images/bash_bina.jpg') center/cover no-repeat; /* Replace with your image URL */
-            /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8); Cast shadow over background */
-            z-index: -1;
+            position: relative;
+            /* Allows inner content positioning */
+            height: 85vh;
+            /* Height between 60-70% of the viewport */
+            background: url('../../images/bash_bina.jpg') center/cover no-repeat;
+            /* Replace with your image URL */
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+            /* Cast shadow over background */
+            z-index: 1;
         }
 
 
@@ -31,6 +35,21 @@
 
         .navbar {
             background-color: #c3cfdb7e;
+            position: relative;
+            z-index: 2;
+        }
+
+        .navbar,
+        .form-control,
+        .dropdown-menu {
+            position: relative;
+            z-index: 2;
+            /* Ensure interactive elements are above the background */
+        }
+
+        input,
+        .dropdown-menu {
+            z-index: 2;
         }
 
         .navbar-brand,
@@ -93,25 +112,25 @@
 </head>
 
 <body class="  gap-1 " background="../../images/" style=" margin: 0 auto;">
-    
-<div class="background-section">    
-    
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" style="z-index: 12;">
-        <div class="w-100 d-block">
-            <div class="justify-content-between align-items-center d-flex w-75 mx-auto">
-                <a class="navbar-brand" href="#">HNGU Library</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <a class="nav-link" href="#">Login / Iňlis</a>
+    <div class="background-section">
 
-            </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="z-index: 12;">
+            <div class="w-100 d-block">
+                <div class="justify-content-between align-items-center d-flex w-75 mx-auto">
+                    <a class="navbar-brand" href="#">HNGU Library</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <div class=" mx-auto" style="width: 95vw;" id="navbarNav">
-                <!-- <ul class="navbar-nav justify-content-between">
+                    <a class="nav-link" href="#">Login / Iňlis</a>
+
+                </div>
+
+                <div class=" mx-auto" style="width: 95vw;" id="navbarNav">
+                    <!-- <ul class="navbar-nav justify-content-between">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Maglumat gözlemek</a>
                     </li>
@@ -129,76 +148,76 @@
 
 
 
-                <ul class="navbar-nav justify-content-between">
-                    <!-- Maglumat gözlemek Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="maglumatDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Maglumat gözlemek
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="maglumatDropdown">
-                            <li><a class="dropdown-item" href="#">Search Materials</a></li>
-                            <li><a class="dropdown-item" href="#">Reference Tools</a></li>
-                            <li><a class="dropdown-item" href="#">Library Resources</a></li>
-                            <li><a class="dropdown-item" href="#">Support</a></li>
-                        </ul>
-                    </li>
+                    <ul class="navbar-nav justify-content-between">
+                        <!-- Maglumat gözlemek Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="maglumatDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Maglumat gözlemek
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="maglumatDropdown">
+                                <li><a class="dropdown-item" href="#">Search Materials</a></li>
+                                <li><a class="dropdown-item" href="#">Reference Tools</a></li>
+                                <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Support</a></li>
+                            </ul>
+                        </li>
 
-                    <!-- Elektron serişdeler Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="elektronDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Elektron serişdeler
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="elektronDropdown">
-                            <li><a class="dropdown-item" href="#">E-Journals</a></li>
-                            <li><a class="dropdown-item" href="#">E-Books</a></li>
-                            <li><a class="dropdown-item" href="#">Multimedia</a></li>
-                            <li><a class="dropdown-item" href="#">Databases</a></li>
-                        </ul>
-                    </li>
+                        <!-- Elektron serişdeler Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="elektronDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Elektron serişdeler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="elektronDropdown">
+                                <li><a class="dropdown-item" href="#">E-Journals</a></li>
+                                <li><a class="dropdown-item" href="#">E-Books</a></li>
+                                <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                                <li><a class="dropdown-item" href="#">Databases</a></li>
+                            </ul>
+                        </li>
 
-                    <!-- Kitaphana maglumatlary Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="kitaphanaDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Kitaphana maglumatlary
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="kitaphanaDropdown">
-                            <li><a class="dropdown-item" href="#">Library Info</a></li>
-                            <li><a class="dropdown-item" href="#">Opening Hours</a></li>
-                            <li><a class="dropdown-item" href="#">Staff Contacts</a></li>
-                            <li><a class="dropdown-item" href="#">Facilities</a></li>
-                        </ul>
-                    </li>
+                        <!-- Kitaphana maglumatlary Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="kitaphanaDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Kitaphana maglumatlary
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="kitaphanaDropdown">
+                                <li><a class="dropdown-item" href="#">Library Info</a></li>
+                                <li><a class="dropdown-item" href="#">Opening Hours</a></li>
+                                <li><a class="dropdown-item" href="#">Staff Contacts</a></li>
+                                <li><a class="dropdown-item" href="#">Facilities</a></li>
+                            </ul>
+                        </li>
 
-                    <!-- Kitaphananyň ulanyş düzgüny Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="ulanysDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Kitaphananyň ulanyş düzgüny
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="ulanysDropdown">
-                            <li><a class="dropdown-item" href="#">Borrowing Rules</a></li>
-                            <li><a class="dropdown-item" href="#">Fines and Fees</a></li>
-                            <li><a class="dropdown-item" href="#">User Conduct</a></li>
-                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <!-- Kitaphananyň ulanyş düzgüny Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ulanysDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Kitaphananyň ulanyş düzgüny
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="ulanysDropdown">
+                                <li><a class="dropdown-item" href="#">Borrowing Rules</a></li>
+                                <li><a class="dropdown-item" href="#">Fines and Fees</a></li>
+                                <li><a class="dropdown-item" href="#">User Conduct</a></li>
+                                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
+                </div>
             </div>
-        </div>
-    </nav>
-    
-    <!-- <div class="row mb-4">
+        </nav>
+
+        <!-- <div class="row mb-4">
         <div class="col-8">HNGU library</div>
         <div class="col-4 d-flex justify-content-end">
             <div class="me-2">Login</div>
             <div>Inlis</div>
         </div>
     </div> -->
-    <!-- <div class="d-flex">
+        <!-- <div class="d-flex">
         <div class="col-3">
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -217,32 +236,34 @@
         <div class="col-3">Maglumat gozlemek</div>
         <div class="col-3">Maglumat gozlemek</div>
     </div> -->
-    
-    
-    
-    
-    <div class="d-flex mx-auto" style="width: 85vw; z-index: 11;">
-        <div class="col-7 d-block">
-            <div class="col-6 text-white fw-bold fs-1">
-            Su gunki okyjy, <br> Ertirin yolbascysy
-            </div>
-            <div class="   text-white">
-                <div class="px-3 col-6 py-2 bg-primary">Toplumlayyn gozleg</div>
-                <div>
-                    <!-- SU YERI DUZETMELI -->
-                        <input class="py-2 px-4" type="text" placeholder="">
-                        
-                        <button>🔍</button>
-                   
+
+
+
+
+        <div class="d-flex mx-auto" style="width: 85vw; z-index: 11;">
+            <div class="col-7 d-block">
+                <div class="col-6 text-white fw-bold fs-1">
+                    Su gunki okyjy, <br> Ertirin yolbascysy
+                </div>
+                <div class="   text-white">
+                    <div class="px-3 col-6 py-2 " style="background-color: #0540F2;">Toplumlayyn gozleg</div>
+                    <div>
+                        <!-- SU YERI DUZETMELI -->
+                        <div class="  me-0 mb-3 mb-lg-0 me-lg-3">
+                            <input type="text" class=" col-10 small ps-3 py-2  expand-input fs-5"
+                                placeholder="Hemme zat" style="border-radius: 0px 0px 0px 10px; border:  transparent;">
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-5">
+            <div class="col-5">
 
+            </div>
         </div>
+
     </div>
-    
-</div>
     <!-- YYGY YGYGDAN SORALYANLAR -->
 
     <div class="d-flex col-4">
