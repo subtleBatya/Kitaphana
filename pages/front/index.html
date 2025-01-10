@@ -19,7 +19,7 @@
             position: relative; /* Allows inner content positioning */
             height: 85vh; /* Height between 60-70% of the viewport */
             background: url('../../images/bash_bina.jpg') center/cover no-repeat; /* Replace with your image URL */
-            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8); /* Cast shadow over background */
+            /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8); Cast shadow over background */
             z-index: -1;
         }
 
@@ -97,7 +97,7 @@
 <div class="background-section">    
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" style="z-index: 12;">
         <div class="w-100 d-block">
             <div class="justify-content-between align-items-center d-flex w-75 mx-auto">
                 <a class="navbar-brand" href="#">HNGU Library</a>
@@ -221,17 +221,23 @@
     
     
     
-    <div class="d-flex">
-        <div class="col-7">
-            <div class="col-6 text-white fw-bold fs-1" style="margin: 10vh;">
+    <div class="d-flex mx-auto" style="width: 85vw; z-index: 11;">
+        <div class="col-7 d-block">
+            <div class="col-6 text-white fw-bold fs-1">
             Su gunki okyjy, <br> Ertirin yolbascysy
             </div>
-            <div class="">
-                <div>Toplumlayyn gozleg</div>
-                <div></div>
+            <div class="   text-white">
+                <div class="px-3 col-6 py-2 bg-primary">Toplumlayyn gozleg</div>
+                <div>
+                    
+                        <input class="py-2 px-4" type="text" placeholder="">
+                        
+                        <button>🔍</button>
+                   
+                </div>
             </div>
         </div>
-        <div>
+        <div class="col-5">
 
         </div>
     </div>
