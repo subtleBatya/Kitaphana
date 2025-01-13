@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f7fc;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
