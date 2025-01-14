@@ -4,34 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audiokitap</title>
+    <title>Elektron Kitaplar</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles2.css">
     <style>
         body {
-            overflow-x: hidden;
-        }
-
-        .table img {
-            width: 40px;
-            height: auto;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-
-        .btn-listen {
-            background-color: #28a745;
-            color: white;
-        }
-
-        .btn-download {
-            background-color: #6f42c1;
-            color: white;
-        }
-
-        .btn-listen:hover,
-        .btn-download:hover {
-            opacity: 0.9;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
         }
 
         .navbar {
@@ -145,7 +125,10 @@
 </head>
 
 <body>
-
+    <!-- Header Section -->
+    <!-- <div class="header-image">
+        <h1>HNGU Library</h1>
+    </div> -->
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
@@ -163,20 +146,20 @@
 
             <div class=" mx-auto" style="width: 95vw;" id="navbarNav">
                 <!-- <ul class="navbar-nav justify-content-between">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Maglumat gözlemek</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Elektron serişdeler</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kitaphana maglumatlary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kitaphananyň ulanyş düzgüny</a>
-                        </li>
-    
-                    </ul> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Maglumat gözlemek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elektron serişdeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kitaphana maglumatlary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kitaphananyň ulanyş düzgüny</a>
+                    </li>
+
+                </ul> -->
 
 
 
@@ -242,115 +225,151 @@
         </div>
     </nav>
 
+    <!-- Content Section -->
+    <div class="container my-4 fs-4">
+        <h2 class="content-title fw-bold" style="font-size: 4vw;color: #253977;">Zurnallar</h2>
+        <p>Mekdep agzalarynyň medeni durmuşyny goldamak üçin filmleriň, çykyşlaryň (sazlar, operalar we ş.m.) dürli
+            resanlary, medeni we akademiki dokumental filmleri hödürleýäris.</p>
 
+    </div>
+
+    <!--  Buttons -->
+    <div class=" mx-auto py-3 row d-flex " style="width: 90vw;">
+        <button class=" col  border border-1 border-dark bg-white py-2">Zurnallar</button>
+        <button class=" col  border border-1 border-dark bg-white py-2 ">Gazetlar</button>
+
+    </div>
+
+
+    <!-- JOURNALS  -->
     <div class="container mt-5">
-        <h1 class="text-primary mb-3">Audiokitap</h1>
-        <p>
-            Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen kitaplary
-            kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we karz alyp bolýar.
-        </p>
-        <div class="table-responsive">
-            <table class="table  align-middle">
-                <thead class="table-light">
-                    <tr class="text-center">
-                        <th scope="col ">T/b</th>
-                        <th scope="col ">Kitap ady</th>
-                        <th scope="col ">Awtor</th>
-                        <th scope="col ">Çykan senesi</th>
-                        <th scope="col ">Hereketi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Repeat rows as needed -->
-                    <tr class="text-center ">
-                        <td class="py-4">1</td>
-                        <td>
-                            <img src="book-cover.png" alt="Book cover"> Magtymguly
-                        </td>
-                        <td>Meredow A</td>
-                        <td>1997</td>
-                        <td>
-                            <button class="btn btn-listen btn-sm me-2">Diňemek</button>
-                            <button class="btn btn-download btn-sm">Ýüklemek</button>
-                        </td>
-                    </tr>
-                    <tr class="text-center">
-                        <td class="py-4">1</td>
-                        <td>
-                            <img src="book-cover.png" alt="Book cover"> Magtymguly
-                        </td>
-                        <td>Meredow A</td>
-                        <td>1997</td>
-                        <td>
-                            <button class="btn btn-listen btn-sm me-2">Diňemek</button>
-                            <button class="btn btn-download btn-sm">Ýüklemek</button>
-                        </td>
-                    </tr>
-                    <tr class="text-center">
-                        <td class="py-4">1</td>
-                        <td>
-                            <img src="book-cover.png" alt="Book cover"> Magtymguly
-                        </td>
-                        <td>Meredow A</td>
-                        <td>1997</td>
-                        <td>
-                            <button class="btn btn-listen btn-sm me-2">Diňemek</button>
-                            <button class="btn btn-download btn-sm">Ýüklemek</button>
-                        </td>
-                    </tr>
-                    <tr class="text-center">
-                        <td class="py-4">1</td>
-                        <td>
-                            <img src="book-cover.png" alt="Book cover"> Magtymguly
-                        </td>
-                        <td>Meredow A</td>
-                        <td>1997</td>
-                        <td>
-                            <button class="btn btn-listen btn-sm me-2">Diňemek</button>
-                            <button class="btn btn-download btn-sm">Ýüklemek</button>
-                        </td>
-                    </tr>
-                    <tr class="text-center">
-                        <td class="py-4">1</td>
-                        <td>
-                            <img src="book-cover.png" alt="Book cover"> Magtymguly
-                        </td>
-                        <td>Meredow A</td>
-                        <td>1997</td>
-                        <td>
-                            <button class="btn btn-listen btn-sm me-2">Diňemek</button>
-                            <button class="btn btn-download btn-sm">Ýüklemek</button>
-                        </td>
-                    </tr>
-                    <tr class="text-center">
-                        <td class="py-4">1</td>
-                        <td>
-                            <img src="book-cover.png" alt="Book cover"> Magtymguly
-                        </td>
-                        <td>Meredow A</td>
-                        <td>1997</td>
-                        <td>
-                            <button class="btn btn-listen btn-sm me-2">Diňemek</button>
-                            <button class="btn btn-download btn-sm">Ýüklemek</button>
-                        </td>
-                    </tr>
-                    <tr class="text-center">
-                        <td class="py-4">1</td>
-                        <td>
-                            <img src="book-cover.png" alt="Book cover"> Magtymguly
-                        </td>
-                        <td>Meredow A</td>
-                        <td>1997</td>
-                        <td>
-                            <button class="btn btn-listen btn-sm me-2">Diňemek</button>
-                            <button class="btn btn-download btn-sm">Ýüklemek</button>
-                        </td>
-                    </tr>
-                    <!-- Add more rows here -->
-                </tbody>
-            </table>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-5 ">
+            <div class="col">
+                <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
         </div>
     </div>
+
 
     <div class="container">
         <nav aria-label="Page navigation example">
@@ -418,7 +437,6 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="../../scripts/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
