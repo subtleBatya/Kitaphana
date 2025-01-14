@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elektron Zurnallar</title>
+    <title>Elektron Kitaplar</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/styles2.css">
@@ -59,6 +59,67 @@
 
         .footer-buttons .btn:hover {
             background-color: #f0ad4e;
+        }
+
+        footer {
+            width: 100%;
+            /* Занимает всю ширину экрана */
+            padding: 30px 15px;
+            background-color: #f1f1f1;
+            /* Добавлен фоновый цвет для контраста */
+        }
+
+        .social-icons i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .pagination {
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .page-item.active .page-link {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .page-link {
+            color: #333;
+            border: none;
+            border-radius: 60%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-link:hover {
+            text-decoration: none;
+            background-color: #f0f0f0;
+        }
+
+        .pagination .dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
@@ -166,28 +227,10 @@
 
     <!-- Content Section -->
     <div class="container my-4 fs-4">
-        <h2 class="content-title">Elektron zurnallar</h2>
+        <h2 class="content-title fw-bold" style="font-size: 4vw;color: #253977;">Elektron kitaplar</h2>
         <p>Mekdep agzalarynyň medeni durmuşyny goldamak üçin filmleriň, çykyşlaryň (sazlar, operalar we ş.m.) dürli
             resanlary, medeni we akademiki dokumental filmleri hödürleýäris.</p>
-        <ul>
-            <li>Kitaplary 2-nji gatdaky Maglumat stoly ýa-da 1-nji gatdaky “Akylly kitaphana” arkaly karz alyp
-                bilersiňiz. (Düşenbe-Juma, 09:00 ~ 18:00).</li>
-            <li>Kitaphana web sahypasynda çeşmeler gözläň:</li>
-            <ul>
-                <li>Materiallaryň bardygyny ýa-da ýokdugyny, materiallaryň ýerleşýän ýerini we karz alyp bolýandygyny
-                    barlaň.</li>
-                <li>1-nji gatdaky “Akylly kitaphanada” saklansa, karz alyň we göni gaýtaryň.</li>
-                <li>2-nji gatda saklansa, karz beriň we 2-nji gat Maglumat stoly işgärlerine gaýtaryň.</li>
-            </ul>
-            <li>DVD zolakly bar:</li>
-            <ul>
-                <li>2 adamlyk toplum üçin 5 oturgyç.</li>
-                <li>Simsiz akustiki kabul ediji: 2 gün.</li>
-                <li>Nauşnikler: 1 gün.</li>
-            </ul>
-            <li>2-nji gatdaky Maglumat stoluna girip ýa-da material satyn almak üçin ýüz tutma sahypasy arkaly ulanyp
-                bilersiňiz.</li>
-        </ul>
+
     </div>
 
     <!--  Buttons -->
@@ -293,9 +336,122 @@
                     </div>
                 </a>
             </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="book-details" style="text-decoration: none; color: black;">
+                    <div class="card-book">
+                        <img src="../../images/book-library.png" class="card-img-top" alt="book">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
+                            <div class="d-flex align-items-center mt-2 ms-3">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
+                            <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
+
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination ">
+                <li class="page-item me-2 active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item me-2 dots bg-light  p-2 rounded-2" style="cursor: pointer;">...</li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">10</a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" style="border-radius: 60%;" href="#">»</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Footer -->
 
