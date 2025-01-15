@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bildiris</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <title>Personality Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f9f9f9;
             font-family: Arial, sans-serif;
-            overflow-x: hidden;
+            background-color: #f9f9f9;
+
         }
 
         .navbar {
@@ -23,57 +22,34 @@
             color: white !important;
         }
 
-        .btn-custom {
-            border-radius: 20px;
-            color: #fff;
+        h1,
+        h2,
+        h5 {
+            font-weight: bold;
         }
 
-        .btn-active {
-            background-color: #0039d7;
-            color: #fff;
-        }
-
-        .btn-inactive {
-            background-color: #f5f5f5;
-            color: #000;
-        }
-
-        .search-input {
-            border: 1px solid #0039d7;
-            border-radius: 20px;
-            padding: 8px 15px;
-        }
-
-        .search-btn {
-            background-color: #0039d7;
-            color: #fff;
-            border-radius: 50%;
-            padding: 8px 12px;
-            border: none;
-        }
-
-        .line-separator {
-            border-top: 2px solid #0039d7;
-            margin: 15px 0;
-        }
-
-        .post-card {
-            border: 1px solid #ddd;
+        .profile-img {
             border-radius: 8px;
-            background-color: #fff;
-            padding: 15px;
+        }
+
+        .contact-info i {
+            color: #007bff;
+            margin-right: 5px;
+        }
+
+        .education-title {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .education-item {
             margin-bottom: 10px;
         }
 
-        .post-img {
-            width: 70px;
-            height: auto;
-            margin-right: 15px;
-        }
-
-        .post-date {
-            text-align: right;
-            color: #666;
+        .education-item span {
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
@@ -96,20 +72,20 @@
 
             <div class=" mx-auto" style="width: 95vw;" id="navbarNav">
                 <!-- <ul class="navbar-nav justify-content-between">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Maglumat gözlemek</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Elektron serişdeler</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kitaphana maglumatlary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kitaphananyň ulanyş düzgüny</a>
-                        </li>
-    
-                    </ul> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Maglumat gözlemek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elektron serişdeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kitaphana maglumatlary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kitaphananyň ulanyş düzgüny</a>
+                    </li>
+
+                </ul> -->
 
 
 
@@ -175,69 +151,64 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <!-- Profile Section -->
+            <div class="col-md-12">
+                <h1 class="text-primary">Personality</h1>
+                <div class="d-flex">
+                    <div class="me-4">
+                        <img src="../../images/Hero.webp" alt="Profile" style="width: 20vw; height: 20vh;"
+                            class="img-fluid profile-img mb-3">
+                    </div>
+                    <div>
+                        <h5>Sherry Betts</h5>
+                        <div class="contact-info">
+                            <p><i class="bi bi-envelope"></i> kodicharles@te</p>
+                            <p><i class="bi bi-geo-alt"></i> 2207 Beach Avenue, Los Angeles</p>
+                            <p><i class="bi bi-link"></i> behance.com/sherr</p>
+                            <p><i class="bi bi-telephone"></i> (914) 479-6</p>
+                        </div>
+                    </div>
 
-    <div class="container mt-5">
-        <!-- Header -->
-        <h1 class="text-primary">Bildiris</h1>
-        <p>
-            Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen kitaplary
-            kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we karz alyp bolýar.
-        </p>
+                </div>
 
-        <!-- Filter Buttons -->
-        <div class="d-flex gap-2 mb-3">
-            <button class="btn btn-active">Hemmesi</button>
-            <button class="btn btn-inactive">Umumy bildiris</button>
-            <button class="btn btn-inactive">Okuw maglumatlary</button>
-            <button class="btn btn-inactive">Bilim we makalalar</button>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="d-flex align-items-center gap-2">
-            <input type="text" class="form-control search-input" placeholder="Gözleg sözüňizi ýazyň">
-            <button class="search-btn">
-                <i class="bi bi-search"></i>
-            </button>
-        </div>
-
-        <!-- Separator -->
-        <div class="line-separator"></div>
-
-        <!-- Post Cards -->
-        <div class="post-card d-flex">
-            <img src="book-cover.png" alt="Book cover" class="post-img">
-            <div class="flex-grow-1">
-                <p>Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen
-                    kitaplary kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we
-                    karz alyp bolýar.</p>
-                <i class="bi bi-person"></i>
             </div>
-            <div class="post-date">
-                05/11/2024
-            </div>
-        </div>
 
-        <div class="post-card d-flex">
-            <img src="book-cover.png" alt="Book cover" class="post-img">
-            <div class="flex-grow-1">
-                <p>Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen
-                    kitaplary kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we
-                    karz alyp bolýar.</p>
-                <i class="bi bi-person"></i>
-            </div>
-            <div class="post-date">
-                05/11/2024
+            <!-- Profile and Education Section -->
+            <div class="col-md-12 d-flex justify-content-around align-items-center">
+                <!-- Profile Description -->
+                <div class="col-5">
+                    <h2>Profile</h2>
+                    <p>
+                        Graphic designer with +8 years of experience in branding and print design. Skilled at Adobe
+                        Creative Suite (Photoshop, Illustrator, InDesign) as well as sketching and hand drawing.
+                        Supervised 23 print design projects that resulted in an increase of 32% in savings.
+                    </p>
+                </div>
+
+                <!-- Education Section -->
+                <div class="mt-4 col-5">
+                    <h2 class="education-title">Education</h2>
+                    <div class="education-item">
+                        <p><strong>2005 – 2007</strong> Los Angeles University</p>
+                        <span>Bachelor of Fine Arts in Graphic Design, GPA: 3.4/4.0</span>
+                    </div>
+                    <div class="education-item">
+                        <p><strong>2007 – 2012</strong> New York University</p>
+                        <span>Master of Graphic Design, GPA: 3.8/4.0</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <div class="mt-5"></div>
 
 
     <div class=" text-white mx-auto  align-items-center position-relative mt-5"
-        style="background-color: #253977; height: 34vh; width: 100vw;">
+        style="background-color: #253977; height: 30vh; width: 100vw;">
         <div class="row align-items-center mx-auto position-absolute" style="top: 20%;">
             <div class="   " style="width: 40vw;">
                 <div class="col-8 mx-auto">
@@ -274,10 +245,10 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and Icons -->
-    <script src="../../scripts/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
