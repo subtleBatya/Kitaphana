@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildiris</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .btn-custom {
+            border-radius: 20px;
+            color: #fff;
+        }
+
+        .btn-active {
+            background-color: #0039d7;
+            color: #fff;
+        }
+
+        .btn-inactive {
+            background-color: #f5f5f5;
+            color: #000;
+        }
+
+        .search-input {
+            border: 1px solid #0039d7;
+            border-radius: 2px;
+            padding: 8px 15px;
+        }
+
+        .search-btn {
+            background-color: #0039d7;
+            color: #fff;
+            border-radius: 2px;
+            padding: 8px 15px;
+            border: 1px solid #0039d7;
+        }
+
+        .line-separator {
+            border-top: 2px solid #0039d7;
+            margin: 15px 0;
+        }
+
+        .post-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .post-img {
+            width: 70px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .post-date {
+            text-align: right;
+            color: #666;
+        }
+
+        .pagination {
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .page-item.active .page-link {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .page-link {
+            color: #333;
+            border: none;
+            border-radius: 60%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-link:hover {
+            text-decoration: none;
+            background-color: #f0f0f0;
+        }
+
+        .pagination .dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="w-100 d-block">
+            <div class="justify-content-between align-items-center d-flex w-75 mx-auto">
+                <a class="navbar-brand" href="#">HNGU Library</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="nav-link" href="#">Login / Iňlis</a>
+
+            </div>
+
+            <div class=" mx-auto" style="width: 95vw;" id="navbarNav">
+                <!-- <ul class="navbar-nav justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Maglumat gözlemek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Elektron serişdeler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kitaphana maglumatlary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kitaphananyň ulanyş düzgüny</a>
+                        </li>
+    
+                    </ul> -->
+
+
+
+                <ul class="navbar-nav justify-content-between">
+                    <!-- Maglumat gözlemek Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="maglumatDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Maglumat gözlemek
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="maglumatDropdown">
+                            <li><a class="dropdown-item" href="#">Search Materials</a></li>
+                            <li><a class="dropdown-item" href="#">Reference Tools</a></li>
+                            <li><a class="dropdown-item" href="#">Library Resources</a></li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Elektron serişdeler Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="elektronDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Elektron serişdeler
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="elektronDropdown">
+                            <li><a class="dropdown-item" href="#">E-Journals</a></li>
+                            <li><a class="dropdown-item" href="#">E-Books</a></li>
+                            <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                            <li><a class="dropdown-item" href="#">Databases</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Kitaphana maglumatlary Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kitaphanaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Kitaphana maglumatlary
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="kitaphanaDropdown">
+                            <li><a class="dropdown-item" href="#">Library Info</a></li>
+                            <li><a class="dropdown-item" href="#">Opening Hours</a></li>
+                            <li><a class="dropdown-item" href="#">Staff Contacts</a></li>
+                            <li><a class="dropdown-item" href="#">Facilities</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Kitaphananyň ulanyş düzgüny Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ulanysDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Kitaphananyň ulanyş düzgüny
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ulanysDropdown">
+                            <li><a class="dropdown-item" href="#">Borrowing Rules</a></li>
+                            <li><a class="dropdown-item" href="#">Fines and Fees</a></li>
+                            <li><a class="dropdown-item" href="#">User Conduct</a></li>
+                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <!-- Header -->
+        <h1 class="text-primary">My shelf</h1>
+        <p>
+            Soňky iki aýyň içinde kitaphanada täze satyn alnan kitaplaryň sanawyna göz aýlaň. Täze gelen kitaplary
+            kitaphananyň birinji gatynda ýerleşýän medeni toplumdaky “Täze geliş” tekjesinden görüp we karz alyp bolýar.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="row">
+            <div class="d-flex gap-2 mb-3 col-9">
+                <button class="btn btn-active">Hemmesi</button>
+                <button class="btn btn-inactive">Umumy bildiris</button>
+                <button class="btn btn-inactive">Okuw maglumatlary</button>
+                <button class="btn btn-inactive">Bilim we makalalar</button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="d-flex align-items-center col-3">
+                <input type="text" class="form-control search-input" placeholder="Gözleg sözüňizi ýazyň">
+                <button class="search-btn">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Separator -->
+        <div class="line-separator"></div>
+
+
+
+    </div>
+
+
+
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination ">
+                <li class="page-item me-2 active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item me-2 dots bg-light  p-2 rounded-2" style="cursor: pointer;">...</li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">10</a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" style="border-radius: 60%;" href="#">»</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-5"></div>
+
+
+    <div class=" text-white mx-auto  align-items-center position-relative mt-5"
+        style="background-color: #253977; height: 34vh; width: 100vw;">
+        <div class="row align-items-center mx-auto position-absolute" style="top: 20%;">
+            <div class="   " style="width: 40vw;">
+                <div class="col-8 mx-auto">
+                    <div class="h2">
+                        HNGU library
+                    </div>
+                    <div class="p overflow-auto ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem et
+                        incidunt
+                        aliquam
+                        ?
+                    </div>
+                </div>
+
+            </div>
+            <div class="  mx-auto text-start " style="width: 30vw;">
+                <div class="mb-3">Quick links</div>
+                <div>
+                    <div class="pb-2">Home</div>
+                    <div class="pb-2">About Us</div>
+                    <div class="pb-2">Our Service</div>
+                    <div class="pb-2">Contact Us</div>
+                </div>
+            </div>
+            <div class="  mx-auto text-start " style="width: 30vw;">
+                <div class="mb-3">Quick links</div>
+                <div>
+                    <div class="pb-2">Home</div>
+                    <div class="pb-2">About Us</div>
+                    <div class="pb-2">Our Service</div>
+                    <div class="pb-2">Contact Us</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Icons -->
+    <script src="../../scripts/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+
+</html>
