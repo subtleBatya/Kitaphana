@@ -33,6 +33,42 @@
             object-fit: cover;
         }
 
+        .pagination {
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .page-item.active .page-link {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .page-link {
+            color: #333;
+            border: none;
+            border-radius: 60%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-link:hover {
+            text-decoration: none;
+            background-color: #f0f0f0;
+        }
+
+        .pagination .dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
         /* .hero-text {
             position: absolute;
             top: 7%;
@@ -182,6 +218,33 @@
     </div>
 
 
+
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination ">
+                <li class="page-item me-2 active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item me-2 dots bg-light  p-2 rounded-2" style="cursor: pointer;">...</li>
+                <li class="page-item me-2">
+                    <a class="page-link" href="#">10</a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" style="border-radius: 60%;" href="#">»</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- Footer -->
     <div class="mt-5"></div>
 
 
