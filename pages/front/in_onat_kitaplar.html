@@ -4,21 +4,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kitaphana</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Elektron Kitaplar</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
   <link rel="stylesheet" href="../../css/styles2.css">
   <style>
-    footer {
-      width: 100%;
-      /* Занимает всю ширину экрана */
-      padding: 30px 15px;
-      background-color: #f1f1f1;
-      /* Добавлен фоновый цвет для контраста */
+    body {
+      background-color: #EAEAEA;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
     }
 
-    a {
-      text-decoration: none;
+    footer {
+      background-color: #253977;
+      height: 30vh;
+      width: 100vw;
+      position: fixed;
+      bottom: 0%;
     }
+
+    .navbar {
+      background-color: #253977;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+    }
+
+    .header-image {
+      background-image: url('https://via.placeholder.com/1200x300');
+      /* Replace with actual image URL */
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+    }
+
+    .header-image h1 {
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .content-title {
+      color: #2c3e50;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .footer-buttons .btn {
+
+      background-color: #D9D9D9;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .footer-buttons .btn:hover {
+      background-color: #f0ad4e;
+    }
+
 
 
     .social-icons i {
@@ -77,80 +128,134 @@
 </head>
 
 <body>
-  <header class="navbar navbar-expand-lg  bg-transparent fixed-top border-bottom border-dark" id="navbar"
-    style="transition: background-color 1s ease-in-out; ">
-    <div class="container-fluid">
-      <a class="navbar-brand text-dark fw-bold" href="#">Kitaphana</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav fs-5">
-          <li class="nav-item me-4 ">
-            <a class="nav-link text-dark hover-effect border-rounded rounded-3" aria-current="page"
-              href="../index.html">Home</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link text-dark hover-effect border-rounded rounded-3" href="../pages/library.html">Library</a>
-          </li>
-          <li class="nav-item dropdown me-4 ">
-            <a class="nav-link  text-dark" href="#" id="coursesDropdown">Courses<span class="arrow ">▼</span></a>
-            <ul class="dropdown-menu rounded-4 dropdown-menu1" id="coursesMenu" style="border: 1px solid #FFA000;">
-              <li><a class="dropdown-item text-dark hover-effect border-rounded rounded-2" href="#">HTML5</a></li>
-              <li><a class="dropdown-item text-dark hover-effect border-rounded rounded-2" href="#">CSS3</a></li>
-              <li><a class="dropdown-item text-dark hover-effect border-rounded rounded-2" href="#">JavaScript</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown me-4">
-            <a class="nav-link  text-dark" href="#" id="profileDropdown">
-              Profile <span class="arrow">▼</span>
+  <!-- Header Section -->
+  <!-- <div class="header-image">
+        <h1>HNGU Library</h1>
+    </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="w-100 d-block">
+      <div class="justify-content-between align-items-center d-flex w-75 mx-auto">
+        <a class="navbar-brand" href="#">HNGU Library</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="nav-link" href="#">Login / Iňlis</a>
+
+      </div>
+
+      <div class=" mx-auto" style="width: 95vw;" id="navbarNav">
+        <!-- <ul class="navbar-nav justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Maglumat gözlemek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elektron serişdeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kitaphana maglumatlary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kitaphananyň ulanyş düzgüny</a>
+                    </li>
+
+                </ul> -->
+
+
+
+        <ul class="navbar-nav justify-content-between">
+          <!-- Maglumat gözlemek Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="maglumatDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Maglumat gözlemek
             </a>
-            <ul class="dropdown-menu rounded-4 dropdown-menu1" id="profileMenu" style="border: 1px solid #FFA000;">
-              <li><a class="dropdown-item text-dark hover-effect border-rounded rounded-2" href="#">My list</a></li>
-              <li><a class="dropdown-item text-dark hover-effect border-rounded rounded-2" href="#">Payment</a></li>
-              <li><a class="dropdown-item text-dark hover-effect border-rounded rounded-2" href="#">Suggestions and
-                  complaints</a></li>
+            <ul class="dropdown-menu" aria-labelledby="maglumatDropdown">
+              <li><a class="dropdown-item" href="#">Search Materials</a></li>
+              <li><a class="dropdown-item" href="#">Reference Tools</a></li>
+              <li><a class="dropdown-item" href="#">Library Resources</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
             </ul>
           </li>
-          <li class="nav-item me-4 p-2">
-            <div class="language-switcher"
-              style="display: flex; align-items: center; justify-content: center; width: 80px;">
-              <img src="../images/russian-flag.png" alt="russian" style="width: 40px; height: 20px;" id="languageImage"
-                onclick="changeLanguage()">
-              <span id="languageName" class="flag ms-2">🇷🇺</span>
-            </div>
+
+          <!-- Elektron serişdeler Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="elektronDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Elektron serişdeler
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="elektronDropdown">
+              <li><a class="dropdown-item" href="#">E-Journals</a></li>
+              <li><a class="dropdown-item" href="#">E-Books</a></li>
+              <li><a class="dropdown-item" href="#">Multimedia</a></li>
+              <li><a class="dropdown-item" href="#">Databases</a></li>
+            </ul>
+          </li>
+
+          <!-- Kitaphana maglumatlary Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="kitaphanaDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Kitaphana maglumatlary
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="kitaphanaDropdown">
+              <li><a class="dropdown-item" href="#">Library Info</a></li>
+              <li><a class="dropdown-item" href="#">Opening Hours</a></li>
+              <li><a class="dropdown-item" href="#">Staff Contacts</a></li>
+              <li><a class="dropdown-item" href="#">Facilities</a></li>
+            </ul>
+          </li>
+
+          <!-- Kitaphananyň ulanyş düzgüny Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="ulanysDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Kitaphananyň ulanyş düzgüny
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="ulanysDropdown">
+              <li><a class="dropdown-item" href="#">Borrowing Rules</a></li>
+              <li><a class="dropdown-item" href="#">Fines and Fees</a></li>
+              <li><a class="dropdown-item" href="#">User Conduct</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            </ul>
           </li>
         </ul>
+
       </div>
     </div>
-  </header>
-  <!-- Главная часть -->
+  </nav>
 
 
+  <!-- Links with searchbar -->
 
-
-  <div class="" style="margin-top: 10vh;"></div>
-
-  <div class="  bg-gray align-items-center">
+  <div class=" align-items-center" style="background-color: rgba(190, 188, 188, 0.5)">
     <div style="width: 95vw;" class="d-flex align-items-center justify-content-between">
       <div class="align-items-center mt-3">
         <!-- Breadcrumb -->
         <div class="container align-items-center my-auto">
           <nav aria-label="breadcrumb align-items-center">
             <ol class="breadcrumb align-items-center">
-              <li class="breadcrumb-item"><a class="text-secondary-emphasis" href="#">Baş sahypa</a></li>
-              <li class="breadcrumb-item"><a class="text-secondary-emphasis" href="#">Elektron serişdeler</a></li>
-              <li class="breadcrumb-item " class="text-secondary-emphasis" aria-current="page">Elektron kitap</li>
+              <li class="breadcrumb-item"><a style="text-decoration: none;" class="text-secondary-emphasis" href="#">Baş
+                  sahypa</a></li>
+              <li class="breadcrumb-item"><a style="text-decoration: none;" class="text-secondary-emphasis"
+                  href="#">Elektron
+                  serişdeler</a></li>
+              <li class="breadcrumb-item " class="text-secondary-emphasis" aria-current="page">Elektron
+                kitap</li>
             </ol>
           </nav>
         </div>
       </div>
       <div>
-        <div class="align-items-center rounded-3 px-3 py-1" style="background-color: white;">
-          <input type="text" class=" fs-6   " placeholder="Search..." style="border: none; outline: none;">
+        <div class="align-items-center rounded-5 px-3 py-1"
+          style="background-color: transparent; border: 1px solid black;">
+          <input type="text" class=" fs-6   " placeholder=""
+            style="background-color: transparent; border: none; outline: none;">
           <span class="" style=" color: #FFA000;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="pb-1" width="17" height="17" viewBox="0 0 24 24" fill="none">
               <path
                 d="M19.1229 17.8666L18.4955 18.494C20.5272 16.4622 21.6686 13.7066 21.6686 10.8333C21.6686 7.96002 20.5272 5.2044 18.4955 3.17263C17.4906 2.16531 16.2967 1.36649 14.9821 0.822027C13.6676 0.277568 12.2583 -0.00179428 10.8355 9.92197e-06C9.41238 -0.00191882 8.00297 0.27737 6.68814 0.82183C5.37331 1.36629 4.179 2.16519 3.17388 3.17263C2.16763 4.17869 1.36946 5.37313 0.824874 6.6877C0.28029 8.00226 0 9.41122 0 10.8341C0 12.257 0.28029 13.666 0.824874 14.9806C1.36946 16.2951 2.16763 17.4896 3.17388 18.4956C4.179 19.5031 5.37331 20.302 6.68814 20.8464C8.00297 21.3909 9.41238 21.6702 10.8355 21.6682C12.2583 21.67 13.6676 21.3907 14.9821 20.8462C16.2967 20.3018 17.4906 19.5029 18.4955 18.4956L17.8681 19.1246L22.7435 24L24 22.7419L19.1229 17.8666ZM17.2375 17.2376C16.3985 18.0811 15.4005 18.7498 14.3014 19.205C13.2022 19.6602 12.0236 19.8929 10.8339 19.8895C9.64418 19.893 8.46559 19.6605 7.36639 19.2053C6.26719 18.75 5.2692 18.0812 4.43033 17.2376C3.58659 16.3987 2.91764 15.4008 2.46215 14.3016C2.00666 13.2025 1.77365 12.0239 1.77671 10.8341C1.77365 9.64434 2.00666 8.46576 2.46215 7.3666C2.91764 6.26745 3.58659 5.26956 4.43033 4.43068C5.2692 3.58702 6.26719 2.91822 7.36639 2.463C8.46559 2.00779 9.64418 1.7752 10.8339 1.77874C12.0236 1.77538 13.2022 2.00803 14.3014 2.46324C15.4005 2.91845 16.3985 3.58717 17.2375 4.43068C18.0807 5.26986 18.7492 6.26785 19.2044 7.36696C19.6596 8.46607 19.8925 9.64449 19.8894 10.8341C19.8925 12.0238 19.6596 13.2022 19.2044 14.3013C18.7492 15.4004 18.0807 16.3984 17.2375 17.2376Z"
                 fill="black" />
@@ -162,168 +267,151 @@
 
   </div>
 
+  <!-- Content Section -->
+  <div class="container my-4 fs-4">
+    <h2 class="content-title fw-bold" style="font-size: 4vw;color: #253977;">In onat kitaplar</h2>
+    <p>Mekdep agzalarynyň medeni durmuşyny goldamak üçin filmleriň, çykyşlaryň (sazlar, operalar we ş.m.) dürli
+      resanlary, medeni we akademiki dokumental filmleri hödürleýäris.</p>
 
-
-  <!--Poisk-->
-  <div class="container-fluid">
-    <div
-      class="d-flex flex-column flex-lg-row justify-content-end align-items-start align-items-lg-center py-2 px-3 shadow-sm">
-      <!-- Поле поиска -->
-      <div class="position-relative me-0 mb-3 mb-lg-0 me-lg-3">
-        <input type="text" class="form-control pe-5 rounded-4 expand-input fs-4" placeholder="Search..."
-          style="border: 1px solid #FFA000;">
-        <span class="position-absolute top-50 translate-middle-y end-0 me-2" style="color: #FFA000;"></span>
-      </div>
-      <!-- Dropdown Category -->
-      <div class="dropdown me-3 mb-3 mb-lg-0">
-        <button class="btn btn-secondary border-0 dropdown-toggle rounded-4 fs-4" type="button" id="dropdownMenuButton1"
-          data-bs-toggle="dropdown" aria-expanded="false"
-          style="background-color: #FFA000; color: white; width: 150px;">
-          Category
-        </button>
-        <ul class="dropdown-menu rounded-4" aria-labelledby="dropdownMenuButton1" style="border: 1px solid #FFA000;">
-          <li><a class="dropdown-item rounded-2" href="#">A-z</a></li>
-          <li><a class="dropdown-item rounded-2" href="#">z-a</a></li>
-          <li><a class="dropdown-item rounded-2" href="#">Aktiw</a></li>
-          <li><a class="dropdown-item rounded-2" href="#">Aktiw dal</a></li>
-        </ul>
-      </div>
-      <!-- Dropdown Filter -->
-      <div class="dropdown ">
-        <button class="btn btn-secondary border-0 dropdown-toggle rounded-4 fs-4 " type="button"
-          id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"
-          style="background-color: #FFA000; color: white; width: 100px;">
-          Filter
-        </button>
-        <ul class="dropdown-menu rounded-4" aria-labelledby="dropdownMenuButton2" style="border: 1px solid #FFA000;">
-          <li><a class="dropdown-item rounded-2" href="#">A-z</a></li>
-          <li><a class="dropdown-item rounded-2" href="#">z-a</a></li>
-          <li><a class="dropdown-item rounded-2" href="#">Aktiw</a></li>
-          <li><a class="dropdown-item rounded-2" href="#">Aktiw dal</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- content -->
-  <div class="flex-wrap mx-auto" style="width: 90vw;">
-    <div class="h1 fw-bold" style="color: #253977;">In onat kitaplar</div>
-    <div class="h3 text-dark-emphasis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla doloribus,
-      cum modi
-      dolores fugit
-      laboriosam ratione veritatis perspiciatis quasi necessitatibus similique dicta error repellat sit.</div>
-  </div>
-
-  <!-- BUTTONS Above BOOKS -->
-
-  <div class="flex-wrap mx-auto text-center justify-content-around" style="width: 100vw;">
-    <div class="btn btn-warning col-2 me-1">HELLO</div>
-    <div class="btn btn-light col-2 me-1">HELLO</div>
-    <div class="btn btn-light col-2 me-1">HELLO</div>
-    <div class="btn btn-light col-2 me-1">HELLO</div>
-    <div class="btn btn-light col-2">HELLO</div>
   </div>
 
 
+  <!--  Buttons -->
+  <div class="footer-buttons mx-auto py-3 row d-flex justify-content-around" style="width: 90vw;">
+    <div class="btn col  rounded-4 me-2">Hersi</div>
+    <div class="btn col  rounded-4 me-2">STKF</div>
+    <div class="btn col  rounded-4 me-2">YDF</div>
+    <div class="btn col  rounded-4 me-2">NG</div>
+    <div class="btn col rounded-4">GF</div>
+  </div>
 
 
-
-  <!--Books-->
-  <div class="container py-4 mt-4">
-
+  <!-- JOURNALS  -->
+  <div class="container mt-5">
     <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-5 ">
       <div class="col">
         <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
           <div class="card-book">
             <img src="../../images/book-library.png" class="card-img-top" alt="book">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
-              <div class="d-flex align-items-center mt-2 ms-3">
-                <span class="star">★</span>
-                <span>5</span>
-              </div>
-              <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
             </div>
           </div>
         </a>
       </div>
       <div class="col">
-        <a href="#" class="book-details" style="text-decoration: none; color: black;">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
           <div class="card-book">
             <img src="../../images/book-library.png" class="card-img-top" alt="book">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
-              <div class="d-flex align-items-center mt-2 ms-3">
-                <span class="star">★</span>
-                <span>5</span>
-              </div>
-              <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
             </div>
           </div>
         </a>
       </div>
       <div class="col">
-        <a href="#" class="book-details" style="text-decoration: none; color: black;">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
           <div class="card-book">
             <img src="../../images/book-library.png" class="card-img-top" alt="book">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
-              <div class="d-flex align-items-center mt-2 ms-3">
-                <span class="star">★</span>
-                <span>5</span>
-              </div>
-              <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
             </div>
           </div>
         </a>
       </div>
       <div class="col">
-        <a href="#" class="book-details" style="text-decoration: none; color: black;">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
           <div class="card-book">
             <img src="../../images/book-library.png" class="card-img-top" alt="book">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
-              <div class="d-flex align-items-center mt-2 ms-3">
-                <span class="star">★</span>
-                <span>5</span>
-              </div>
-              <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
             </div>
           </div>
         </a>
       </div>
       <div class="col">
-        <a href="#" class="book-details" style="text-decoration: none; color: black;">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
           <div class="card-book">
             <img src="../../images/book-library.png" class="card-img-top" alt="book">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
-              <div class="d-flex align-items-center mt-2 ms-3">
-                <span class="star">★</span>
-                <span>5</span>
-              </div>
-              <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
             </div>
           </div>
         </a>
       </div>
       <div class="col">
-        <a href="#" class="book-details" style="text-decoration: none; color: black;">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
           <div class="card-book">
             <img src="../../images/book-library.png" class="card-img-top" alt="book">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title text-center mt-3">Pride and Prejudice</h5>
-              <div class="d-flex align-items-center mt-2 ms-3">
-                <span class="star">★</span>
-                <span>5</span>
-              </div>
-              <a href="" class="btn downloader mt-2 mx-auto rounded-2">Download</a>
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
+          <div class="card-book">
+            <img src="../../images/book-library.png" class="card-img-top" alt="book">
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
+          <div class="card-book">
+            <img src="../../images/book-library.png" class="card-img-top" alt="book">
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
+          <div class="card-book">
+            <img src="../../images/book-library.png" class="card-img-top" alt="book">
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
+          <div class="card-book">
+            <img src="../../images/book-library.png" class="card-img-top" alt="book">
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
+          <div class="card-book">
+            <img src="../../images/book-library.png" class="card-img-top" alt="book">
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="../pages/book_details.html" class="book-details" style="text-decoration: none; color: black;">
+          <div class="card-book">
+            <img src="../../images/book-library.png" class="card-img-top" alt="book">
+            <div class="card-body d-flex flex-column justify-content-center my-auto text-center mt-5">
+              <h5 class="card-title  ">Pride and Prejudice</h5>
             </div>
           </div>
         </a>
       </div>
     </div>
   </div>
+
 
   <div class="container">
     <nav aria-label="Page navigation example">
@@ -348,13 +436,11 @@
     </nav>
   </div>
 
-
   <!-- Footer -->
 
 
 
-  <div class=" text-white mx-auto  align-items-center position-relative mt-4"
-    style="background-color: #253977; height: 30vh; width: 100vw;">
+  <footer class=" text-white mx-auto  align-items-center position-relative mt-5">
     <div class="row align-items-center mx-auto position-absolute" style="top: 20%;">
       <div class="   " style="width: 40vw;">
         <div class="col-8 mx-auto">
@@ -389,12 +475,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
-  </script>
-  <script src="../scripts/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
